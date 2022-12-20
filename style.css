@@ -25,13 +25,14 @@ main{
 }
 
 .titoli{
+    display: inline-block;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     text-shadow: -1px 0 2px #000000, 0 1px 2px #000000, 1px 0 2px #000000, 0 -1px 2px #000000;
     color: rgb(255, 255, 255);
     padding: 40px;
     font-size: 2.2em;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 span{
@@ -65,10 +66,16 @@ margin: 10px;
 }
 
 .btn{
+    display: inline-block;
     width: 300px;
-    font-weight: 900;
+    font-weight: 500 !important;
+    font-size: x-large !important;
     --bs-btn-padding-y: 0rem;
     padding: 0;
+    background-color: #1AC8FA !important;
+    border: none !important;
+    box-shadow: 3px 3px 3px #888888;
+    text-shadow: 2px 2px 2px #888888;
 }
 
 #wifi{
@@ -109,4 +116,69 @@ footer{
 
 .mobile{
     display: none;
+}
+
+.m1{
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .mobile{
+        display: inline-block;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: #00532C;
+        text-shadow: -1px 0 2px #ffffff, 0 1px 2px #ffffff, 1px 0 2px #ffffff, 0 -1px 2px #ffffff;
+        padding: 20px;
+    }
+
+    img{
+        width: 50%;
+    }
+
+    main{
+        padding-top: 50px;
+    }
+
+    .titoli{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: -1px 0 2px #000000, 0 1px 2px #000000, 1px 0 2px #000000, 0 -1px 2px #000000;
+        color: rgb(255, 255, 255);
+        padding: 0 20px;
+        font-weight: bold;
+        font-size: 1.8em;
+    }
+
+    #flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #validationTextarea {
+        width: 100%;
+    }
+
+    .btn{
+        width: 80%;
+    }
+
+    #dicono {
+        color: white;
+        text-shadow: none;
+    }
+
+    .pub{
+        display: none;
+    }
+
+    .m1{
+        display: block;
+        width: 100%;
+    }
+
+    footer{
+        line-height: 0.9;
+    }
 }
