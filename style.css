@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+header{
+    margin-top: 20px;
+}
+
 h1{
     text-align: center;
     max-height: 5%;
@@ -17,6 +21,7 @@ main{
     background-image: url('sfondo.png');
     max-width: 60em;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
 
 .titoli{
@@ -39,7 +44,7 @@ span{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items:baseline;
+    align-items: baseline;
 }
 
 #flex >div + button{
@@ -61,7 +66,9 @@ margin: 10px;
 
 .btn{
     width: 300px;
-    /* max-height: 38px; */
+    font-weight: 900;
+    --bs-btn-padding-y: 0rem;
+    padding: 0;
 }
 
 #wifi{
@@ -79,4 +86,27 @@ margin: 10px;
     font-weight: bolder;
     color: #1FB584;
     text-shadow: -1px 0 2px #ffffff, 0 1px 2px #ffffff, 1px 0 2px #ffffff, 0 -1px 2px #ffffff;
+}
+
+.form-control{
+    height: 50px;
+}
+
+.btn-primary{
+    height: 50px;
+}
+
+footer{
+    text-align: center;
+    color: #1F1F1F;
+    font-weight: 400;
+    line-height: 0;
+    padding: 25px;
+    background-color: #F3F3F3;
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+.mobile{
+    display: none;
 }
