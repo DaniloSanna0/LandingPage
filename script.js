@@ -15,5 +15,8 @@ function success() {
 
     let numero = sessionStorage.getItem("numero");
     document.getElementById("numero").innerHTML = numero;
-    // document.getElementById("validationTextarea").value = document.getElementById("numero").innerHTML
   });
+
+
+//   const submit = document.getElementById("submit");
+//   submit.addEventListener("submit", )

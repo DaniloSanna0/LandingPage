@@ -122,6 +122,17 @@ footer{
     display: none;
 }
 
+.modal-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.modal-footer > button{
+    width: 45% !important;
+
+}
+
 @media screen and (max-width: 500px) {
     .mobile{
         display: inline-block;
