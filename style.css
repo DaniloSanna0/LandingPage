@@ -130,7 +130,22 @@ footer{
 
 .modal-footer > button{
     width: 45% !important;
+    height: 100%;
+    margin: 0 auto;
+}
 
+.modal-footer > button:nth-child(1){
+    background-color: crimson !important;
+}
+
+.modal-footer > button:nth-child(2){
+    background-color: green !important;
+}
+
+#numero{
+    text-align: center;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 500px) {
