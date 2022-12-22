@@ -17,6 +17,7 @@ function success() {
     document.getElementById("numero").innerHTML = numero;
   });
 
-
-//   const submit = document.getElementById("submit");
-//   submit.addEventListener("submit", )
+  function formSubmit() {
+    document.myform.submit();
+    alert("numero " + document.myform.number.value +" inviato")
+  }

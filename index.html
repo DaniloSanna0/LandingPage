@@ -18,10 +18,10 @@
         <h2 class="titoli">RICHIEDI UNA CONSULEZA GRATUITA</h2>
         <h2 class="mobile">NOI TROVIAMO L'OFFERTA PER LA FIBRA PERFETTA PER TE </h2>
         <h2 class="titoli">E TU RISPARMI FINO A <span>144€</span> AL'ANNO</h2>
-            <form id="flex" class="was-validated">
+            <form id="flex" class="was-validated" method="post" action="https://example.com" name="myform">
                 <div>
                     <!-- <label for="validationTextarea" class="form-label">Textarea</label> -->
-                  <input type="number" class="form-control" id="validationTextarea" placeholder="Inserisci il tuo numero di cellulare" required min="1111111111" max="9999999999" onkeyup="success()">
+                  <input type="number" class="form-control" id="validationTextarea" placeholder="Inserisci il tuo numero di cellulare" required min="1111111111" max="9999999999" name="number" onkeyup="success()">
                   <div class="invalid-feedback">
                     Inserisci il tuo numero di cellulare
                   </div>
@@ -59,7 +59,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Riscrivi</button>
-          <button type="button" class="btn btn-primary" id="submit" type="submit" data-bs-dismiss="modal">Conferma</button>
+          <button type="button" class="btn btn-primary" id="submit" type="submit" data-bs-dismiss="modal" onclick="formSubmit()">Conferma</button>
         </div>
       </div>
     </div>
